@@ -1,0 +1,32 @@
+
+
+<div class="card-container flex flex-wrap gap-3">
+  <div class="info-card w-full md:w-6 lg:w-2">
+    <span class="label">Agenti Registrati in CPA</span>
+    <span class="value">884</span>
+  </div>
+  <div class="info-card w-full md:w-6 lg:w-2">
+    <span class="label">Agenti Registrati in FPA</span>
+    <span class="value">569</span>
+  </div>
+  <div class="info-card w-full md:w-6 lg:w-2">
+    <span class="label">Agenti Registrati</span>
+    <span class="value">431</span>
+  </div>
+  <div class="info-card w-full md:w-6 lg:w-2">
+    <span class="label">Esercizi in Corso</span>
+    <span class="value">2025</span>
+  </div>
+</div>
+
+<div class="chart-section">
+  <div class="chart-box">
+    <h4>Situazione Provvigioni e Contributi</h4>
+    <p-chart type="line" [data]="lineData" [options]="chartOptions"></p-chart>
+  </div>
+  <div class="chart-box">
+    <h4>Situazione Provvigioni e Contributi</h4>
+    <p-chart type="bar" [data]="barData" [options]="chartOptions"></p-chart>
+  </div>
+</div>
+

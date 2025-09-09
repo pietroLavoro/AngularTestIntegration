@@ -1,0 +1,58 @@
+/* Estilo global directo al PanelMenu */
+
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f5f8fc; // color similar al fondo de referencia
+}
+
+.p-panelmenu .p-panelmenu-header {
+  background: transparent !important;
+  border: none !important;
+  color: #ffffff !important;
+  font-weight: 500 !important;
+  padding: 0.75rem 1rem !important;
+}
+
+.p-panelmenu .p-panelmenu-header:hover {
+  background-color: rgba(255, 255, 255, 0.05) !important;
+}
+
+::ng-deep .p-menuitem-link {
+  display: flex !important;
+  align-items: center;
+  gap: 0.75rem !important;
+}
+
+
+.p-panelmenu .p-menuitem-link:hover {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  color: #ffffff !important;
+}
+
+.p-panelmenu .p-menuitem-link.p-highlight {
+  background-color: rgba(255, 255, 255, 0.15) !important;
+  color: #ffffff !important;
+  font-weight: bold !important;
+}
+
+.p-panelmenu .p-menuitem-icon {
+  color: #90caf9 !important;
+  margin-right: 0.5rem !important;
+}
+
+.main-content {
+  margin-left: 240px;
+  min-height: 100vh;
+  background-color: #f4f6f8;
+}
+
+.p-menu-overlay {
+  top: 3.5rem !important;
+  right: 2rem !important;
+  left: auto !important;
+}

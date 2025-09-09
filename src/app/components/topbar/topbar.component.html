@@ -1,0 +1,20 @@
+<div class="topbar">
+  <div class="topbar-left">
+    <h2 class="topbar-title">Dashboard</h2>
+  </div>
+
+  <div class="topbar-right">
+    <div class="user-icon-container" (click)="toggleUserMenu()">
+      <i class="pi pi-user user-icon"></i>
+    </div>
+
+    <div class="user-panel" *ngIf="userMenuVisible">
+      <!-- panel de usuario -->
+      <ul>
+        <li (click)="onProfile()"><i class="pi pi-user"></i> Profilo</li>
+        <li (click)="onSettings()"><i class="pi pi-cog"></i> Impostazioni</li>
+        <li (click)="onLogout()"><i class="pi pi-sign-out"></i> Logout</li>
+      </ul>
+    </div>
+  </div>
+</div>
